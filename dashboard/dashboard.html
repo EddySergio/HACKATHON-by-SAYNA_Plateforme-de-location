@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Tableau de bord</title>
+</head>
+
+<body>
+  <div class="loadingPage">
+      <img src="logo_black.png" class="chargement" alt="Ofa">
+  </div>
+  <section class="main">
+  
+    <div class="navigation">
+      <img src="logo.png" alt="logo ofa" class="logo"/>
+      <div>
+        <button >
+          <img src="utilisateur.png" alt="logo ofa" class="navigationIcon" />
+        </button>
+        <button>
+          <img src="box.png" alt="logo ofa" class="navigationIcon" />
+        </button>
+        <button>
+          <img src="notification.png" alt="logo ofa" class="navigationIcon" />
+        </button>
+        <button >
+          <img src="setting.png" alt="logo ofa" class="navigationIcon" />
+        </button>
+      </div>
+      <button class="leaveHere"><img src="leave.png" alt="logo ofa" /></button>
+    </div>
+
+    <div class="component1 componentV">
+      <div class="avatar">
+        <img src="tchad.jpeg" alt="pdp" />
+      </div>
+      <p>Randriamihanta judex</p>
+      <div class="etoile">
+        <img src="etoile.png" alt="etoile" />
+        <img src="etoile.png" alt="etoile" />
+        <img src="etoile.png" alt="etoile" />
+        <img src="etoile.png" alt="etoile" />
+        <img src="etoile.png" alt="etoile" />
+      </div>
+      <div class="statistique">
+        <div class="statItems">
+          <p>Nombre de produit</p>
+          <p class="number">12</p>
+        </div>
+        <div class="statItems">
+          <p>Produit en location</p>
+          <p class="number">4</p>
+        </div>
+        <div class="statItems non">
+          <p>Niveau</p>
+          <p class="number">3</p>
+        </div>
+      </div>
+      <div class="myproduct">
+        <div class="boutonNext" id="next2">
+          <img src="gauche.png" alt="fleche gauche " />
+        </div>
+        <div class="favoryProduct">
+          <div class="conteneurScroll">
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+            
+          </div>
+        </div>
+        <div class="boutonNext" id="next">
+          <img src="droite.png" alt="fleche droite" />
+        </div>
+      </div>
+    </div>
+
+    <div class="component2 componentV">
+    
+      <div class="addProduct">
+        <form action="">
+          <div class="centreX"> <img src="close.png" alt="fermer" class="fermer"></div>
+          <div class="image">
+            <img src="image.png" alt="icone image">
+            <input type="file" name="joinImage" id="joinImage">
+          </div>
+          <div class="vraiForm">
+            <div class="brother">
+              <p>Localisation</p>
+              <select name="localisation" id="localisation">
+                <option value="Toamasina">Toamasina</option>
+                <option value="Antananarivo">Antananarivo</option>
+                <option value="Fianarantsoa">Fianarantsoa</option>
+                <option value="Mahajanga">Mahajanga</option>
+                <option value="Antsiranana">Antsiranana</option>
+                <option value="Toliara">Toliara</option>
+              </select>
+            </div>
+            <div class="brother">
+              <p>Prix</p>
+              <input type="text" name="localisation">
+            </div>
+            <div class="brother">
+              <p>Etat</p>
+              <input type="number" name="" max="10" min="0" id="">
+            </div>
+            <div class="brother">
+              <p>Frequence</p>
+              <select name="Frequence" id="Frequence">
+                <option value="jour">Par jour</option>
+                <option value="heure">Par heure</option>
+                <option value="semaine">Par semaine</option>
+                <option value="mois">Par mois </option>
+              </select>
+            </div>
+            <div class="brother">
+              <p>Disponibilité</p>
+              <select name="Frequence" id="Frequence">
+                <option value="Disponible">Disponible</option>
+                <option value="location">En location</option>
+
+              </select>
+            </div>
+            <div class="brother">
+              <p>Categorie</p>
+              <input type="text" name="localisation">
+            </div>
+            <div class="brother1">
+              <p>Description</p>
+              <input type="text" name="localisation" class="textarea">
+            </div>
+            <button type="reset" class="Fannule">Annuler</button>
+            <button type="submit" class="Fconfirme">Confirmer</button>
+          </div>
+        </form>
+
+      </div>
+      <div class="cent">
+        <a href="../accueil.html">Retourner a la page d'accueil <img src="retour.png" alt="retour" /></a>
+      </div>
+      <div class="enLocation">
+        <div class="boutonLocation">
+          <h3>Les produits en location</h3>
+        </div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+      </div>
+      <div class="enLocation">
+        <div class="boutonLocation deuxieme">
+          <h3>Tout vos produits</h3>
+          <button class="ajouterProduit"> Ajouter <img src="plus.png" alt="icon plus"></button>
+          <form action="" method="post">
+            <div class="formContent">
+   <input type="text" name="recherche" id="recherche" placeholder="Rechercher un produit">
+            <button type="submit"><img src="loupe.png" alt="icon plus"></button>
+            </div>
+         
+          </form>
+          <select name="triage" id="triage" class="trierProduit">
+            <option value="categorie">Categorie</option>
+            <option value="date">Date</option>
+          </select>
+          <button class="deleteProduit"> Supprimmer tout <img src="delete.png" alt="icon plus"></button>
+        </div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+        <div class="cartePorduit"></div>
+      </div>
+
+    </div>
+    <div class="component3 componentV">
+      <div class="cent">
+        <a href="../accueil.html">Retourner a la page d'accueil <img src="retour.png" alt="retour" /></a>
+      </div>
+      </a>
+      <div class="droite">
+        <div class="notification">
+          <h2>Administrateur</h2>
+          <p><span class="span">Raison</span> : Confirmation de location</p>
+          <div class="more">
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+          </div>
+        </div>
+        <div class="notification">
+          <h2>Administrateur</h2>
+          <p><span class="span">Raison</span> : Confirmation de location</p>
+          <div class="more">
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+          </div>
+        </div>
+        <div class="notification">
+          <h2>Administrateur</h2>
+          <p><span class="span">Raison</span> : Confirmation de location</p>
+          <div class="more">
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+            <div class="infoLoc"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="component4 componentV">
+      <h2>Désolé, cette page est en dévéloppement</h2>
+      <img src="work.png" alt="En developpement">
+    </div>
+  </section>
+ 
+</body>
+
+</html>
