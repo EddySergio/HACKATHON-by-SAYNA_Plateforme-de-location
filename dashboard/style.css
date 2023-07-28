@@ -1,0 +1,858 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+}
+.navigation {
+  height: 100vh;
+  width: 7%;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+.navigation img {
+  height: 100px;
+  width: 150px;
+}
+.navigation div button,
+.navigation button {
+  background: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.active {
+  border-bottom: solid white 2px;
+}
+.nonActive {
+  border: none;
+}
+.navigation div button img,
+.navigation button img {
+  width: 33px;
+  height: 33px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.navigation div img:hover{
+  animation: shake 0.8s;
+}
+.logo{
+  animation: rotationLogo 3s;
+}
+.loadingPage img{
+  height: 140px;
+  width: 200px;
+  animation: rotationLogo 3s infinite;
+}
+/* 
+SECTION QUI CHANGE */
+
+.component1 {
+  height: 100vh;
+  width: 93%;
+  margin-left: 7%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d8399;
+}
+.avatar img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+}
+.component1 p {
+  margin-top: 5px;
+  color: #292929;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+.etoile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.etoile img {
+  height: 30px;
+  width: 30px;
+}
+
+.statistique {
+  height: 80px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 4px 0px black;
+  justify-content: space-evenly;
+}
+
+.statItems {
+  height: 80%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: solid #292929 1px;
+  justify-content: space-evenly;
+}
+.statItems p {
+  font-size: 14px;
+}
+
+.non {
+  border: none;
+}
+.myproduct {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin-top: 25px;
+}
+.favoryProduct {
+  height: 200px;
+  width: 80%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #292929;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.conteneurScroll {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteneurScroll img{
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  position:relative;
+}
+.conteneurScroll div {
+  width: 250px;
+  height: 80%;
+  border-radius: 7px;
+  background-color: #292929;
+  margin-left: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.conteneurScroll div:hover {
+  height: 95%;
+  padding:0 15px;
+}
+.boutonNext {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+}
+.boutonNext:hover {
+  background-color: #151515;
+  cursor: pointer;
+}
+.boutonNext img {
+  height: 40px;
+  width: 40px;
+}
+
+.visible {
+  display: flex;
+}
+.nonVisible {
+  display: none;
+}
+
+/* COMPOSANT 2 */
+
+.component2 {
+  height: 100vh;
+  width: 93%;
+  margin-left: 7%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+.cent {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: white;
+}
+.cent a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #292929;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+.cent a img {
+  height: 20px;
+  width: 20px;
+}
+.enLocation {
+  margin-top: 50px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
+  margin-left: 2%;
+}
+.formContent{
+  width: 280px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border: solid #292929 1px;
+  border-radius: 7px;
+  padding: 2px 2px;
+}
+.boutonLocation {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.boutonLocation h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  color: white;
+  border-radius: 7px;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  background-color: #1d8399;
+}
+select{
+  cursor: pointer;
+}
+.image input{
+  margin-bottom: 15px;
+  margin-right: 50px;
+  background-color: #292929;
+  color: white;
+  border-radius: 7px;
+}
+
+.boutonLocation * {
+  height: 100%;
+}
+.boutonLocation button {
+  cursor: pointer;
+}
+.cartePorduit {
+  height: 200px;
+  width: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  background-color: rgb(36, 36, 35);
+}
+.ajouterProduit,
+.trierProduit {
+  background-color: #292929;
+  padding: 0 25px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.deleteProduit {
+  background-color: #e12323;
+  padding: 0 25px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.ajouterProduit,.trierProduit:hover {
+  background-color: #1c1c1c;
+}
+.deleteProduit:hover{
+  background-color: #eb1717;
+}
+.ajouterProduit{
+  background-color: #292929;
+}
+.ajouterProduit:hover{
+  background-color: #1c1c1c;
+}
+
+.fermer{
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin-right: 5%;
+}
+.fermer:hover{
+  animation: shake 0.7s;
+}
+.centreX{
+  width: 100%;
+  display: flex;
+  height: 5%;
+  animation: shake 0.7s;  align-items: center;
+  justify-content: flex-end;
+}
+.ajouterProduit img {
+  margin-left: 5px;
+  height: 15px;
+  width: 15px;
+}
+.trierProduit img {
+  margin-left: 5px;
+  height: 25px;
+  width: 25px;
+}
+.deleteProduit img {
+  margin-left: 5px;
+  height: 18px;
+  width: 18px;
+}
+.boutonLocation form {
+  display: flex;
+  align-items: center;
+}
+.boutonLocation form input {
+  width: 250px;
+  height: 100%;
+border: none;
+  border-right: none;
+  margin: 0;
+  padding-left:5px ;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+.boutonLocation form button {
+  border: none;
+  border-radius: 7px;
+  height: 100%;
+  padding: 0 10px;
+  background-color: #292929;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.boutonLocation form button img {
+  height: 20px;
+  width: 20px;
+}
+
+/* Formulaire ajout de produit */
+
+.addProduct {
+  height: 100vh;
+  width: 50%;
+  margin-left: 45%;
+  position: fixed;
+  background-color: #292929;
+  z-index: 99;
+  animation: slideDroite 1.5s;
+  display: none;
+}
+.addProduct form {
+  height: 100%;
+  width: 100%;
+}
+.image {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: rgb(157, 156, 155);
+}
+.image img{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10%;
+}
+.brother {
+  height: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.brother p {
+  margin-bottom: 10px;
+  color: white;
+}
+.brother input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+.brother select {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  padding: 5px;
+}
+.brother1 {
+  width: 95%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+}
+.brother1 input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.vraiForm {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.vraiForm button {
+  width: 46%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  color: white;
+}
+button{
+  cursor: pointer;
+}
+.Fconfirme {
+  background-color: #1d8399;
+  border: none;
+}
+.Fannule {
+  background-color: #292929;
+  border: solid white 1px;
+}
+.Fannule:hover {
+  background-color: #ffffff;
+  border: solid white 1px;
+  color: #292929;
+}
+.formContent button:hover{
+background-color: #1c1c1c;
+}
+.Fconfirme:hover{
+  background-color:#1da0bd ;
+}
+/* ANIMATION */
+
+@keyframes slideDroite {
+  0% {
+    margin-left: 200%;
+    display: flex;
+  }
+  100% {
+    margin-left: 45%;
+    display: flex;
+  }
+}
+@keyframes slideGauche {
+  0% {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  50% {
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 15px;
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+@keyframes rotationLogo {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(30deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+/* COMPOSANT 3 */
+
+
+
+.component3 {
+  height: 100vh;
+  width: 97%;
+  margin-left: 7%;
+  display: none;
+  justify-content: center;
+}
+.droite {
+  height: 900px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 5%;
+  border-radius: 7px;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notification {
+  height: auto;
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #292929;
+  padding: 10px 0px;
+  cursor: pointer;
+  animation: slideGauche 1.5s;
+}
+.notification:hover {
+  transition: 0.5s;
+  padding: 10px 5px;
+}
+.notification h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.notification p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 15px;
+}
+.span {
+  font-weight: 600;
+}
+.notification .more {
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.infoLoc {
+  margin-top: 5px;
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #1d8399;
+}
+
+
+/* COMPOSANT NUMERO 4 */
+
+.component4 {
+  height: 100vh;
+  width: 93%;
+  margin-left: 7%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#292929 ;
+  font-size: 20px;
+}
+.component4 h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .cent {
+    display: none;
+  }
+  .navigation {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .navigation div {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+  }
+  .navigation div button,
+  .navigation button {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .navigation div button img,
+  .navigation button img {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 5px;
+  }
+  .logo{
+    width: 30px;
+    border-radius: 10px;
+    height: 50%;
+  }
+  .navigation button{
+    width: auto;
+    margin-right: 15px;
+  }
+  /* separation */
+
+  .avatar{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .avatar img{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+  .etoile img{
+    height: 23px;
+    width: 23px;
+  }
+  .component1 p{
+    font-size: 14px;
+  }
+  .component1{
+    margin: 0;
+    width: 100%;
+    margin-top: 100px;
+   justify-content:flex-start;
+   height: 70vh;
+  }
+  .statistique {
+    height: 60px;
+    width: 300px;
+  }
+  .statItems p {
+    font-size: 10px;
+  }
+  .myproduct {
+    width: 100%;
+  }
+  .favoryProduct {
+    height: 90px;
+    width: 60%;
+  }
+  .boutonNext {
+    height: 40px;
+    width: 40px;
+  }
+  .boutonNext img {
+    height: 25px;
+    width: 25px;
+  }
+  .conteneurScroll div {
+    width: 100px;
+    height: 80%;
+    margin-left: 10px;
+  }
+
+
+  /* Composant 3 */
+  .component3 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .droite {
+    margin: 0;
+    width: 90%;
+  }
+
+
+  /* Composant 2 */
+  .component2 {
+    height: 100vh;
+    width: 100%;
+    margin:0;
+    margin-top: 50px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+  }
+  .enLocation {
+    justify-content: center;
+  }
+  .boutonLocation {
+    justify-content: center;
+  }
+  .deuxieme{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .deuxieme *{
+    margin-top: 15px;
+  }
+  .addProduct{
+    margin: 0;
+    width: 90%;
+    margin-top: -50px;
+    height: 85vh;
+  }
+  .brother{
+    margin-top: 5px;
+    width: 90%;
+  }
+  .vraiForm{
+    margin-top: 10px;
+  }
+  .image{
+    height: 20%;
+  }
+.brother1{
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .ajouterProduit,
+.trierProduit,.deleteProduit,.ajouterProduit {
+  padding: 10px 15px;
+}
+
+.ajouterProduit,
+.trierProduit:hover {
+  background-color: #1c1c1c;
+}
+.deuxieme button img {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+}
+
+.trierProduit img {
+  margin-left: 5px;
+  height: 25px;
+  width: 25px;
+}
+.deleteProduit img {
+  margin-left: 5px;
+  height: 18px;
+  width: 18px;
+}
+
+.deuxieme h3{
+  padding: 10px 10px;
+}
+
+
+.component4 img{
+  width: 90%;
+}
+}
+
+
+.loadingPage{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
