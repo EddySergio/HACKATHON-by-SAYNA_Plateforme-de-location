@@ -12,10 +12,12 @@
 
 <body>
   <div class="loadingPage">
-      <img src="logo_black.png" class="chargement" alt="Ofa">
+      <div class="cube">
+        <img src="logo_black.png" class="chargement" alt="Ofa">
+      </div>
   </div>
-  <section class="main">
-  
+
+  <!-- BARRE DE NAVIGATION -->
     <div class="navigation">
       <img src="logo.png" alt="logo ofa" class="logo"/>
       <div>
@@ -34,15 +36,16 @@
       </div>
       <button class="leaveHere"><img src="leave.png" alt="logo ofa" /></button>
     </div>
-
+    
+    <!-- COMPTE PRESTATAIRE -->
     <div class="component1 componentV">
       <div class="avatar">
         <img src="tchad.jpeg" alt="pdp" />
       </div>
       <p>Randriamihanta judex</p>
       <div class="etoile">
-        <img src="etoile.png" alt="etoile" />
-        <img src="etoile.png" alt="etoile" />
+        <img src="starPoint.png" alt="etoile" />
+        <img src="starPoint.png" alt="etoile" />
         <img src="etoile.png" alt="etoile" />
         <img src="etoile.png" alt="etoile" />
         <img src="etoile.png" alt="etoile" />
@@ -66,16 +69,56 @@
           <img src="gauche.png" alt="fleche gauche " />
         </div>
         <div class="favoryProduct">
-          <div class="conteneurScroll">
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
-            <div class="elementScroll" style="background-image: url('photo.jpg')"></div>
+          <div class="conteneurScroll" >
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+            <div class="elementScroll" style="background-image: url('photo.jpg')">
+              <div class="opacity">
+                  <p class="titre">Appareil photo</p>
+                  <div><p>12</p><img src="like.png" alt="love"></div>
+              </div>
+            </div>
+
             
           </div>
         </div>
@@ -85,8 +128,8 @@
       </div>
     </div>
 
+    <!-- PAGE PRODUIT -->
     <div class="component2 componentV">
-    
       <div class="addProduct">
         <form action="">
           <div class="centreX"> <img src="close.png" alt="fermer" class="fermer"></div>
@@ -152,9 +195,15 @@
         <div class="boutonLocation">
           <h3>Les produits en location</h3>
         </div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
       </div>
       <div class="enLocation">
         <div class="boutonLocation deuxieme">
@@ -173,18 +222,36 @@
           </select>
           <button class="deleteProduit"> Supprimmer tout <img src="delete.png" alt="icon plus"></button>
         </div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-        <div class="cartePorduit"></div>
-      </div>
+         <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
+        <div class="cartePorduit">
+          <img src="exemple.jpg" alt="image de produit" class="centPour">
+        </div>
 
     </div>
+    </div>
+    
+
+    <!-- PAGE NOTIFICATION -->
     <div class="component3 componentV">
       <div class="cent">
         <a href="../accueil.html">Retourner a la page d'accueil <img src="retour.png" alt="retour" /></a>
@@ -225,8 +292,9 @@
           </div>
         </div>
       </div>
-
     </div>
+
+    <!-- PAGE DE PARAMETRE -->
     <div class="component4 componentV">
       <h2>Désolé, cette page est en dévéloppement</h2>
       <img src="work.png" alt="En developpement">
