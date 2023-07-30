@@ -631,10 +631,11 @@ footer{
     height: 100%;
     padding: 8px;
     border-radius : 0px 10px 10px 0px;
+    font-size: 24px;
+    cursor: pointer;
     background-color: #1D8399;
     border: none;
     color: #ffffff;
-    font-size: 24px;
 }
 hr {
     margin-top: 50px;
@@ -711,7 +712,6 @@ hr {
         justify-content: center;
         flex-direction: column;
         height: auto;
-        margin-bottom: ;
     }
     .linkLogin.active{
         display: flex;
