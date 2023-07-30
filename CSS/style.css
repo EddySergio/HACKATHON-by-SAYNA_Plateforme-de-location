@@ -797,6 +797,22 @@ hr {
         font-size: 18px; 
     }
 }
+@media screen and (max-width: 1050px){
+    .categorie{
+        width: 300px;
+        flex-direction: column;
+    }
+    .CategList{
+        flex-direction: column;
+    }
+    .left-arrow {
+        transform: rotate(90deg);
+    }
+
+    .right-arrow {
+        transform: rotate(90deg);
+    }
+}
 @media screen and (max-width: 980px){
     .OfaTitle{
     font-size: 22px;
