@@ -41,8 +41,8 @@ navigationIconLlist.forEach((element) => {
 for (let index = 0; index < componentV.length; index++) {
   componentV[index].style.display='none'
 }
-componentV[1].style.display='flex'
-componentV[1].style.display='flex'
+componentV[0].style.display='flex'
+componentV[0].style.display='flex'
 
 const mouvement = (test) => {
   test == "one"
@@ -79,3 +79,5 @@ element.addEventListener('click',()=>{
 document.addEventListener('DOMContentLoaded',()=>{
 loadingPage.style.display='none'
 })
+
+console.log(componentV);

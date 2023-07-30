@@ -1,6 +1,11 @@
+@font-face{
+  src: url("police/LeagueSpartan-VariableFont_wght.ttf");
+  font-family:Spartan;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: Spartan;
 }
 
 section {
@@ -48,10 +53,19 @@ section {
 .logo{
   animation: rotationLogo 3s;
 }
+.cube{
+  height: auto;
+  width: auto;
+  padding: 0px 50px;
+  /* border: solid #292929 2px; */
+  border-radius: 7px;
+}
 .loadingPage img{
   height: 140px;
   width: 200px;
-  animation: rotationLogo 3s infinite;
+  margin-left: -100px;
+  animation: rotationLogoLad 4s infinite;
+  border-radius: 7px;
 }
 /* 
 SECTION QUI CHANGE */
@@ -82,7 +96,7 @@ SECTION QUI CHANGE */
 .component1 p {
   margin-top: 5px;
   color: #292929;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:Spartan;
   font-weight: 500;
   font-size: 25px;
 }
@@ -150,27 +164,64 @@ SECTION QUI CHANGE */
   align-items: center;
   justify-content: center;
 }
-.conteneurScroll img{
-  height: 100%;
-  width: 100%;
-  border-radius: 7px;
-  position:relative;
-}
-.conteneurScroll div {
+
+.elementScroll {
   width: 250px;
   height: 80%;
-  border-radius: 7px;
-  background-color: #292929;
-  margin-left: 10px;
   transition: 0.5s;
   cursor: pointer;
+  margin-left: 10px;
+  border-radius: 7px;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  padding:0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.conteneurScroll div:hover {
-  height: 95%;
-  padding:0 15px;
+.titre,.opacity div p{
+color: white;
+}
+
+.opacity div p{
+  font-size: 14px;
+}
+.opacity .titre,.opacity div img{
+  height: 25px;
+  width: 25px;
+  color: white;
+  }
+.elementScroll:hover{
+  height: 90%;
+  background-size: 120%;
+}
+.opacity{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.opacity div{
+  width:95%;
+  padding-right: 5%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.opacity div p{
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+.opacity:hover{
+  background-color: #0a0a0a7d;
+  border-radius: 7px;
 }
 .boutonNext {
   height: 60px;
@@ -180,6 +231,11 @@ SECTION QUI CHANGE */
   justify-content: center;
   align-items: center;
   background-color: #292929;
+}
+.opacity .titre{
+  font-size: 16px;
+  width: 100%;
+  margin-left: 10px;
 }
 .boutonNext:hover {
   background-color: #151515;
@@ -195,6 +251,11 @@ SECTION QUI CHANGE */
 }
 .nonVisible {
   display: none;
+}
+
+.noMove:hover{
+  padding: 0;
+  height: 0;
 }
 
 /* COMPOSANT 2 */
@@ -220,7 +281,7 @@ SECTION QUI CHANGE */
   margin-right: 20px;
   text-decoration: none;
   color: #292929;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:Spartan;
   display: flex;
   align-items: center;
 }
@@ -235,6 +296,7 @@ SECTION QUI CHANGE */
   flex-wrap: wrap;
   width: 98%;
   margin-left: 2%;
+  justify-content: center;
 }
 .formContent{
   width: 280px;
@@ -252,6 +314,7 @@ SECTION QUI CHANGE */
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  justify-content: space-evenly;
 }
 .boutonLocation h3 {
   display: flex;
@@ -261,8 +324,7 @@ SECTION QUI CHANGE */
   color: white;
   border-radius: 7px;
   height: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:Spartan;
   font-weight: 100;
   font-size: 15px;
   background-color: #1d8399;
@@ -290,7 +352,14 @@ select{
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 7px;
-  background-color: rgb(36, 36, 35);
+  transition: 0.4s;
+  cursor: pointer;
+  background-position: center;
+  background-size:100%;
+}
+.cartePorduit:hover {
+height: 210px;
+width: 160px;
 }
 .ajouterProduit,
 .trierProduit {
@@ -298,7 +367,6 @@ select{
   padding: 0 25px;
   border: none;
   border-radius: 7px;
-  margin-left: 10px;
   color: white;
   display: flex;
   align-items: center;
@@ -308,7 +376,6 @@ select{
   padding: 0 25px;
   border: none;
   border-radius: 7px;
-  margin-left: 10px;
   color: white;
   display: flex;
   align-items: center;
@@ -528,6 +595,37 @@ background-color: #1c1c1c;
     transform: rotate(0deg);
   }
 }
+@keyframes rotationLogoLad {
+ 0%{
+  margin-left: -100px;
+  transform: rotate(0deg);
+ }
+ 25%{
+  margin-left: 100px;
+  margin-top: 0px;
+  transform: rotate(360deg);
+
+ }
+ 50%{
+  margin-left: 100px;
+  margin-top: 100px;
+  transform: rotate(0deg);
+
+ }
+ 75%{
+  margin-left: -100px;
+  margin-top: 100px;
+  transform: rotate(360deg);
+
+ }
+ 100%{
+  margin-left: -100px;
+  margin-top:0px;
+  transform: rotate(0deg);
+
+ }
+
+}
 
 @keyframes shake {
   0%{
@@ -584,15 +682,14 @@ background-color: #1c1c1c;
   animation: slideGauche 1.5s;
 }
 .notification:hover {
-  transition: 0.5s;
-  padding: 10px 5px;
+  transition: 0.3s;
+  padding: 12px 5px;
 }
 .notification h2 {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:Spartan;
   margin-left: 10px;
   margin-bottom: 5px;
 }
@@ -600,8 +697,7 @@ background-color: #1c1c1c;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:Spartan;
   margin-left: 15px;
 }
 .span {
@@ -636,7 +732,7 @@ background-color: #1c1c1c;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:Spartan;
   color:#292929 ;
   font-size: 20px;
 }
@@ -648,7 +744,7 @@ background-color: #1c1c1c;
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .cent {
     display: none;
   }
@@ -808,7 +904,6 @@ background-color: #1c1c1c;
 
 
 
-
   .ajouterProduit,
 .trierProduit,.deleteProduit,.ajouterProduit {
   padding: 10px 15px;
@@ -843,6 +938,38 @@ background-color: #1c1c1c;
 .component4 img{
   width: 90%;
 }
+.opacity .titre,.opacity div img{
+  height: 10px;
+  width: 10px;
+  color: white;
+  }
+  .opacity p{
+  font-size: 5px;
+  padding: 0;
+  margin: 0;
+}
+.opacity .titre,.opacity div p{
+  font-size: 10px;
+}
+.opacity{
+  padding: 0;
+  margin: 0;
+}
+.opacity:hover{
+  background-color: rgba(255, 0, 0, 0);
+}
+.opacity div{
+  padding: 0;
+  margin: 0;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+.trierProduit{
+  margin-top: 25px; 
+
+ }
+
 }
 
 
@@ -855,4 +982,17 @@ background-color: #1c1c1c;
   justify-content: center;
   align-items: center;
   background-color: white;
+}
+
+p,h1,h2,h3{
+  font-family:Spartan;
+}
+.boutonLocation h3{
+  color: white;
+  font-size: 18px;
+}
+.centPour{
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
 }
